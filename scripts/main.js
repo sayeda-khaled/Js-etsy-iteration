@@ -19,3 +19,15 @@ const sumPrice = pricesArray.reduce(function(prop, i) {
 const averagePrice = (sumPrice / items.length);
 
 console.log(averagePrice);
+
+//Second probolem
+
+
+const filterPrices = items.filter(function(item) {
+  return item.price >= 14 && item.price <= 18;
+});
+
+console.log(filterPrices, filterPrices);
+
+
+//Third probolem
