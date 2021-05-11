@@ -17,8 +17,12 @@ const sumPrice = pricesArray.reduce(function(prop, i) {
 // to obtain the average cost
 const averagePrice = (sumPrice / items.length);
 
-console.log(averagePrice);
 
+
+
+//averagePrice.forEach(function(item) {
+  console.log("The average price is" + " " + averagePrice);
+//});
 //Second probolem
 
 
