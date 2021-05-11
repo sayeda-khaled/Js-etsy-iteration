@@ -65,3 +65,46 @@ console.log(materialsArray);
 
 
 // Fifth problem
+
+// const numbers = [2, 34, 3, 23, 42, 3, 1, 65];
+//
+// for (let i = 8; i < numbners.length; i++) {
+//   console.log(numbers[i]);
+// }
+
+const materialNumbers = items.map(function(item) {
+  return item.materials;
+});
+
+ // for (let i = 8; i < materialNumbers.length; i++) {
+ //   console.log(numbers[i]);
+
+console.log(materialNumbers, materialNumbers)
+
+materialNumbers.filter(function(num) {
+
+return
+  // for (let i = 8; i < materialNumbers.length; i++) {
+  //   console.log(materialNumbers[i]);
+
+});
+
+//sith problem..
+
+// const whoMadeArray = items.map(function(item) {
+//   return item['who_made'];
+// });
+//
+//   console.log(whoMadeArray, whoMadeArray);
+
+const iDidArray = items.filter(function(item) {
+
+    return item['who_made']=== "i_did";
+  });
+
+  console.log(iDidArray, iDidArray);
+
+  iDidArray.forEach(function(item) {
+    console.log(iDidArray.length + " " + "were made by their sellers");
+  });
+//"who_made": "i_did"
