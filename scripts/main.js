@@ -1,4 +1,3 @@
-
 // get just the prices of each item in the array
 // instead of an array of objects, we want an array of prices
 
@@ -50,6 +49,19 @@ const currencyCodeArray = items.filter(function(item) {
   return item.currency_code === "GBP";
 });
 
-currencyCodeArray.forEach(function (item) {
-  console.log (item.title + " " + item.price);
+currencyCodeArray.forEach(function(item) {
+  console.log(item.title + " " + item.price);
 });
+
+
+// forth problem..
+
+const materialsArray = items.filter(function(item) {
+
+  return item.materials == ["wood"];
+});
+
+console.log(materialsArray);
+
+
+// Fifth problem
