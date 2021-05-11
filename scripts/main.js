@@ -31,3 +31,25 @@ console.log(filterPrices, filterPrices);
 
 
 //Third probolem
+
+// for(const [title, price] of items.entries()) {
+//
+//   //for (let i = 0; i < items.length; i++){
+//     if (items.currency_code === "GBD"){
+//       return [items.title, items.price];
+//     }
+//
+//   }
+//
+//   //console.log[(title, price)];
+//   //console.log(price);
+// }
+
+const currencyCodeArray = items.filter(function(item) {
+
+  return item.currency_code === "GBP";
+});
+
+currencyCodeArray.forEach(function (item) {
+  console.log (item.title + " " + item.price);
+});
