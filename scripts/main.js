@@ -21,7 +21,7 @@ const averagePrice = (sumPrice / items.length);
 
 
 //averagePrice.forEach(function(item) {
-  console.log("The average price is" + " " + averagePrice);
+console.log("The average price is" + " " + averagePrice);
 //});
 //Second probolem
 
@@ -30,7 +30,7 @@ const filterPrices = items.filter(function(item) {
   return item.price >= 14 && item.price <= 18;
 });
 
-console.log(filterPrices, filterPrices);
+console.log(filterPrices);
 
 
 //Third probolem
@@ -76,24 +76,33 @@ console.log(materialsArray);
 //   console.log(numbers[i]);
 // }
 
-const materialNumbers = items.map(function(item) {
-  return item.materials;
+
+// const materialNumbers = items.map(function(item) {
+//
+//   for (let i = 8; i < materialNumbers.length; i++) {
+//    console.log(item.materials[i]);
+//
+// }});
+
+
+// const materialNumbers = items.map(function(item) {
+//   return item.materials;
+// });
+
+
+//This will filter and retun the arrays with 8 o more items...
+var manyMaterials = items.filter(function(item) {
+  return item.materials.length > 7;
 });
 
- // for (let i = 8; i < materialNumbers.length; i++) {
- //   console.log(numbers[i]);
+//This is to display according to the required message provided in the assignment..
+manyMaterials.forEach(function(item){
+  console.log(item.title + ' has ' + item.materials.length + ' materials: ' + item.materials)
+})
 
-console.log(materialNumbers, materialNumbers)
 
-materialNumbers.filter(function(num) {
 
-return
-  // for (let i = 8; i < materialNumbers.length; i++) {
-  //   console.log(materialNumbers[i]);
-
-});
-
-//sith problem..
+//sixth problem..
 
 // const whoMadeArray = items.map(function(item) {
 //   return item['who_made'];
@@ -103,12 +112,11 @@ return
 
 const iDidArray = items.filter(function(item) {
 
-    return item['who_made']=== "i_did";
-  });
+  return item['who_made'] === "i_did";
+});
 
-  console.log(iDidArray, iDidArray);
+console.log(iDidArray);
 
-  iDidArray.forEach(function(item) {
-    console.log(iDidArray.length + " " + "were made by their sellers");
-  });
-//"who_made": "i_did"
+iDidArray.forEach(function(item) {
+  console.log(iDidArray.length + " " + "were made by their sellers");
+});
