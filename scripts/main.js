@@ -23,6 +23,15 @@ const averagePrice = (sumPrice / items.length);
 //averagePrice.forEach(function(item) {
 console.log("The average price is" + " " + averagePrice);
 //});
+
+
+
+
+
+
+
+
+
 //Second probolem
 
 
@@ -62,7 +71,7 @@ currencyCodeArray.forEach(function(item) {
 
 const materialsArray = items.filter(function(item) {
 
-  return item.materials == ["wood"];
+  return item.materials.includes('wood');
 });
 
 console.log(materialsArray);
